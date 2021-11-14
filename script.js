@@ -3,7 +3,7 @@ let count = 0;
 let object_list = [];
 let t;
 
-function element_find_func(element_index, element_field){
+function element_find_func(element_index, element_field) {
 	return document.body.querySelector('table').querySelector('.' + object_list[element_index].className).querySelector('.' + element_field + '_in').value
 }
 
@@ -86,7 +86,7 @@ function listener() {
 	object_list[0] = document.querySelector('.row_0');
 	object_list[-1] = null;
 	document.body.addEventListener('click', e => {
-		switch(e.target.className) {
+		switch (e.target.className) {
 			case 'delete_btn':
 				this.delete_btn_func(e.target);
 				break;
